@@ -1,0 +1,38 @@
+.sec{
+    text-align: center;
+    color:#5f448b;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+.sec h3{
+    margin-bottom: 40px;
+}
+form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+input[type="text"],[type="password"],[type="email"],[type="tel"],textarea{
+    width: 40%;
+    margin-bottom: 20px !important;
+    border-radius: 12px;
+    box-shadow: 2px 3px 7px 0 #5f448b;
+}
+.gender{
+    text-align: left;
+    width: 40%;
+}
+form .btn{
+    background-color: #5f448b;
+    border-color: #5f448b;
+    color: #f2eee3;
+    box-shadow: 4px 5px 14px 0 #2e1717e3;
+}
+input[type="password"]{
+    margin-bottom: 5px !important;
+}
+.stength{
+    font-size: 13px;
+}
