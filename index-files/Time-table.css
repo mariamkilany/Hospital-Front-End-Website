@@ -1,0 +1,22 @@
+.table-dark {
+    color: #fff;
+    background-color:#5f448b !important;
+}
+.table-dark td,
+.table-dark th,
+.table-dark thead th {
+    border-color: #5f448b !important;
+}
+body{
+    background-color: #f2eee3 !important;
+}
+.sec1{
+    margin-top: 20px;
+    text-align: center;
+}
+.sec1 h2{
+    color: #5f448b;
+}
+table tbody{
+    color: #5f448b;
+}
