@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/register.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <img class="logo" src="image/Life Line-logos.jpeg" alt="" srcset="">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Doctors.html">Doctors</a></li>
+                <li><a href="Time-table.html">Time Table</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="sec">
+        <div class="container fo">
+            <h3>Registration Form</h3>
+            <form action="">
+                <input type="text" name="fname" id="" placeholder="First Name.." required>
+                <input type="text" name="lname" id="" placeholder="Last Name.." required>
+                <input type="email" name="email" id="" placeholder="Email.." required>
+                <input type="password" name="pass" id="" placeholder="Password.." class="password" onblur="check()" required >
+                <span class="stength"></span>
+                <div class="gender">
+                    <input type="radio" name="gender" id="">
+                    <label for="gender">Male</label>
+                    <br>
+                    <input type="radio" name="gender" id="">
+                    <label for="gender">Female</label>
+                </div>
+                <button type="submit" class="btn btn-primary btn-lg">Register</button>
+            </form>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="container">
+            <ul class="links">
+                <li><a href="https://www.facebook.com/"><img src="image/facebook-logo.png" alt="" srcset=""></a></li>
+                <li><a href="https://www.instagram.com/"><img src="image/instagram.png" alt="" srcset=""></a></li>
+                <li><a href="https://www.twitter.com/"><img src="image/twitter.png" alt="" srcset=""></a></li>
+                <li><a href="https://www.gmail.com/"><img src="image/gmail.png" alt="" srcset=""></a></li>
+            </ul>
+            <nav aria-label="...">
+                <ul class="pagination pagination-lg">
+                    <li class="page-item active" aria-current="page">
+                        <span class="page-link">1</span>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="Time-table.html">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                </ul>
+        </div>
+    </div>
+    <script>
+        let pass=document.querySelector('.sec .password');
+        let printStrength=document.querySelector('.sec .stength');
+        let lower= /[a-z]/g;
+        let upper=/[A-Z]/g;
+        let nums=/[0-9]/g;
+        let char=/[!@#$%^&*]/g;
+        function check(){
+        console.log(pass.value);
+        let weak=false ,med=false,strong=false;
+        if(pass.value.match(lower)){
+            weak=true;
+        }
+        if(pass.value.match(lower)&& pass.value.match(upper)&& pass.value.match(nums)){
+            weak=true;
+            med=true;
+        }
+        if(pass.value.match(lower)&& pass.value.match(upper)&&pass.value.match(nums)&& pass.value.match(char)){
+            weak = true;
+            med = true;
+            strong=true;
+        }
+        if(weak&&med&&strong){
+            printStrength.innerHTML="Password is Strong";
+            printStrength.style.color="green";
+        }
+        else if(weak&&med){
+            printStrength.innerHTML = "Password is Meduim";
+            printStrength.style.color = "#cca712";
+        }
+        else if(weak){
+            printStrength.innerHTML = "Password is very week !";
+            printStrength.style.color = "red";
+        }
+        else{
+            printStrength.innerHTML = "Password is empty !";
+            printStrength.style.color = "red";
+        }
+    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/Doc.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="header">
+        <div class="container">
+            <img class="logo" src="image/Life Line-logos.jpeg" alt="" srcset="">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Doctors.html">Doctors</a></li>
+                <li><a href="Time-table.html">Time Table</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="sec">
+        <div class="container">
+            <div class="input">
+            <h4>Search with Doctor Name</h4>
+            <input type="text" name="" id="search" placeholder="Doctor Name...." oninput="result()" onblur="display()">
+            </div>
+            <div class="imgs">
+            <div class="pic" name="Samy Sameir"><img  src="image/doctor (1).jpg" alt="" srcset="">
+                <p><span>DR Samy Sameir</span> <br>
+                    is a general practitioner with over 20 years experience <br>
+                    No appointment is required to see Dr Samy. <br>
+                    Simply walk-in and ask for the next available consultation.</p></div>
+            <div class="pic" name="Jennifer Devied"><img src="image/doctor.jpg" alt="" srcset="">
+                <p><span>DR Jennifer Devied</span> <br>
+                    Dr Jennifer Devied is a senior general practitioner with 45 years' experience. <br>
+                    No appointment is required to see Dr Jennifer. <br>
+                    Simply walk-in and ask for the next available consultation.</p></div>
+            <div class="pic" name="Ramy Ahmed"><img src="image/83232043-聴診器で腕を交差、男性医師が首の周り敷設.webp" alt="" srcset="">
+            <p><span>DR Ramy Ahmed</span> <br>
+            Dr Ramy Ahmed is a senior general practitioner with 45 years' experience. <br>
+            No appointment is required to see Dr Jennifer. <br>
+            Simply walk-in and ask for the next available consultation.</p></div>
+            <div class="pic" name="Rana Hesham"><img src="image/67192888-portrait-of-pretty-female-doctor-with-beaming-smile-and-crossed-hands.webp" alt="" srcset="">
+            <p><span>DR Rana Hesham</span> <br>
+                Dr Rana Hesham is a senior general practitioner with 45 years' experience. <br>
+                No appointment is required to see Dr Rana . <br>
+                Simply walk-in and ask for the next available consultation.</p></div>
+            <div class="pic" name="Donia Fayed"><img src="image/images (1).jfif" alt="" srcset="">
+            <p><span>DR Donia Fayed</span> <br>
+                Dr Donia Fayed is a senior general practitioner with 45 years' experience. <br>
+                No appointment is required to see Dr Donia . <br>
+                Simply walk-in and ask for the next available consultation.</p></div>
+            <div class="pic" name="Fady Khaled"><img src="image/images (6).jfif" alt="" srcset="">
+            <p><span>DR Fady Khaled</span> <br>
+                Dr Fady Khaled is a senior general practitioner with 45 years' experience. <br>
+                No appointment is required to see Dr Fady. <br>
+                Simply walk-in and ask for the next available consultation.</p></div>
+            <div class="pic" name="Ahmed Hesham"><img src="image/images (4).jfif" alt="" srcset="">
+            <p><span>DR Ahmed Hesham</span> <br>
+                Dr Ahmed Hesham is a senior general practitioner with 45 years' experience. <br>
+                No appointment is required to see Dr Ahmed. <br>
+                Simply walk-in and ask for the next available consultation.</p></div>
+            <div class="pic" name="Shimaa Ayman"><img src="image/a5b26b335cc94272b7c1878ec5b13dbd.jpg" alt="" srcset="">
+            <p><span>DR Shimaa Ayman</span> <br>
+                Dr Shimaa Ayman is a senior general practitioner with 45 years' experience. <br>
+                No appointment is required to see Dr Shimaa. <br>
+                Simply walk-in and ask for the next available consultation.</p></div>
+            <div class="pic" name="Soliman Salem"><img src="image/images (2).jfif" alt="" srcset="">
+            <p><span>DR Soliman Salem</span> <br>
+                Dr Soliman Salem is a senior general practitioner with 45 years' experience. <br>
+                No appointment is required to see Dr Soliman. <br>
+                Simply walk-in and ask for the next available consultation.</p></div>
+            <div class="pic" name="Soaad Fathy"><img src="image/images (5).jfif" alt="" srcset="">
+            <p><span>DR Soaad Fathy</span> <br>
+                Dr Soaad Fathy is a senior general practitioner with 45 years' experience. <br>
+                No appointment is required to see Dr Soaad . <br>
+                Simply walk-in and ask for the next available consultation.</p></div>
+            <div class="pic" name="Samy Yasser"><img src="image/images (3).jfif" alt="" srcset="">
+            <p><span>DR Samy Yasser</span> <br>
+                Dr Samy Yasser is a senior general practitioner with 45 years' experience. <br>
+                No appointment is required to see Dr Samy. <br>
+                Simply walk-in and ask for the next available consultation.</p></div>
+            <div class="pic" name="Mahmoud Ayman"><img src="image/images.jfif" alt="" srcset="">
+            <p><span>DR Kareem Ayman</span> <br>
+                Dr Mahmoud Ayman is a senior general practitioner with 45 years' experience. <br>
+                No appointment is required to see Dr Mahmoud. <br>
+                Simply walk-in and ask for the next available consultation.</p></div>
+            <div class="pic" name="Farida Waleed"><img src="image/bigstock-Portrait-of-a-friendly-female-26984102-2-238x300.jpg" alt="" srcset="">
+            <p><span>DR Farida Waleed</span> <br>
+                Dr Farida Waleed is a senior general practitioner with 45 years' experience. <br>
+                No appointment is required to see Dr Farida. <br>
+                Simply walk-in and ask for the next available consultation.</p></div>
+            <div class="pic" name="Mariam Kilany"><img src="image/15896844-portrait-of-young-female-doctor-with-arms-crossed-isolated-on-white-background.webp" alt="" srcset="">
+            <p><span>DR Mariam Kilany</span> <br>
+                Dr Mariam Kilany is a senior general practitioner with 45 years' experience. <br>
+                No appointment is required to see Dr Mariam. <br>
+                Simply walk-in and ask for the next available consultation.</p></div>
+            <div class="pic" name="Hanaa Waleed"><img src="image/freestock_121149610.jpg" alt="" srcset="">
+            <p><span>DR Hanaa Waleed</span> <br>
+                Dr Hanaa Waleed is a senior general practitioner with 45 years' experience. <br>
+                No appointment is required to see Dr Hanaa. <br>
+                Simply walk-in and ask for the next available consultation.</p></div>
+            <div class="pic" name="Farid Gamal"><img src="image/senior-doctor-arms-crossed-white-isolated-background-senior-doctor-arms-crossed-174153903.jpg" alt="" srcset="">
+            <p><span>DR Farid Gamal</span> <br>
+                Dr Farid Gamal is a senior general practitioner with 45 years' experience. <br>
+                No appointment is required to see Dr Mohamed Ahmed.<br>
+                Simply walk-in and ask for the next available consultation.</p></div>
+            <div class="pic" name="Myada Hany"><img src="image/Jennifer_Kaple_2021.jpg" alt="" srcset="">
+            <p><span>DR Myada Hany</span> <br>
+                Dr Myada Hany is a senior general practitioner with 45 years' experience. <br>
+                No appointment is required to see Dr Myada.<br>
+                Simply walk-in and ask for the next available consultation.</p></div>
+            <div class="pic" name="Duaa Fawzy"><img src="image/polyxenirounds-square.jpg" alt="" srcset="">
+            <p><span>DR Duaa Fawzy</span> <br>
+                Dr Duaa Fawzy is a senior general practitioner with 45 years' experience. <br>
+                No appointment is required to see Dr Duaa.<br>
+                Simply walk-in and ask for the next available consultation.</p></div>
+            <div class="pic" name="Fawzy Badr"><img src="image/young-doctor-16088825.jpg" alt="" srcset="">
+            <p><span>DR Fawzy Badr</span> <br>
+                Dr Fawzy Badr is a senior general practitioner with 45 years' experience. <br>
+                No appointment is required to see Dr Fawzy.<br>
+                Simply walk-in and ask for the next available consultation.</p></div>
+            <div class="pic" name="Bassel Saeed"><img src="image/istockphoto-1189303662-612x612.jpg" alt="" srcset="">
+            <p><span>DR Bassel Saeed</span> <br>
+                Dr Bassel Saeed is a senior general practitioner with 45 years' experience. <br>
+                No appointment is required to see Dr Bassel .<br>
+                Simply walk-in and ask for the next available consultation.</p></div>
+            <div class="pic" name="Fatma Elsaeed"><img src="image/portrait-attractive-young-female-doctor-260nw-379925377.webp" alt="" srcset="">
+            <p><span>DR Fatma Elsaeed</span> <br>
+                Dr Fatma Elsaeed is a senior general practitioner with 45 years' experience. <br>
+                No appointment is required to see Dr Fatma.<br>
+                Simply walk-in and ask for the next available consultation.</p></div>
+            <div class="pic" name="Samera Farahat"><img src="image/depositphotos_118713284-stock-photo-attractive-young-female-doctor.jpg" alt="" srcset="">
+            <p><span>DR Samera Farahat</span> <br>
+                Dr Samera Farahat is a senior general practitioner with 45 years' experience. <br>
+                No appointment is required to see Dr Samera.<br>
+                Simply walk-in and ask for the next available consultation.</p></div>
+            <div class="pic" name="Salma Gamal"><img src="image/depositphotos_8599572-stock-photo-female-doctor.jpg" alt="" srcset="">
+            <p><span>DR Salma Gamal</span> <br>
+                Dr Salma Gamal is a senior general practitioner with 45 years' experience. <br>
+                No appointment is required to see Dr Salma.<br>
+                Simply walk-in and ask for the next available consultation.</p></div>
+        </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="container">
+            <ul class="links">
+                <li><a href="https://www.facebook.com/"><img src="image/facebook-logo.png" alt="" srcset=""></a></li>
+                <li><a href="https://www.instagram.com/"><img src="image/instagram.png" alt="" srcset=""></a></li>
+                <li><a href="https://www.twitter.com/"><img src="image/twitter.png" alt="" srcset=""></a></li>
+                <li><a href="https://www.gmail.com/"><img src="image/gmail.png" alt="" srcset=""></a></li>
+            </ul>
+            <nav aria-label="...">
+                <ul class="pagination pagination-lg">
+                    <li class="page-item"><a class="page-link" href="index.html">1</a></li>
+                    <li class="page-item active" aria-current="page">
+                        <span class="page-link">2</span>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="Time-table.html">3</a></li>
+                    <li class="page-item"><a class="page-link" href="contactus.html">4</a></li>
+                </ul>
+        </div>
+    </div>
+    <script>
+        let search_input=document.querySelector('#search');
+        let imgs=document.querySelectorAll('.imgs .pic');
+        function result(){
+            let value=search_input.value;
+            if(value!=""){
+            for (let i = 0; i < imgs.length; i++)
+            {
+                imgs[i].style.display='none';
+            }
+            for(let i=0;i<imgs.length;i++)
+            {
+                let name=imgs[i].getAttribute('name');
+                if(name==value){
+                    imgs[i].style.display = 'flex';
+                }
+            }
+        }
+        }
+        function display(){
+            let value = search_input.value;
+            if(value==""){
+                for (let i = 0; i < imgs.length; i++)
+                {
+                    imgs[i].style.display = 'flex';
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>
